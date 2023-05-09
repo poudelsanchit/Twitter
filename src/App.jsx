@@ -8,7 +8,15 @@ function App() {
 
   return (
     <>
-      <div>Hello</div>
+      <div className="menu">
+
+      </div>
+      <div class="tweets">
+
+      </div>
+      <div className="trends">
+
+      </div>
     </>
   )
 }
