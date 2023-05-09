@@ -4,14 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <div className="menu">
-
+        <p>Hello Twitter</p>
       </div>
-      <div class="tweets">
+      <div className="tweets">
 
       </div>
       <div className="trends">
