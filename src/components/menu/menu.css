@@ -1,0 +1,36 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menu {
+    width: 25%;
+    float: left;
+    height: 100vh;
+    background: #171717;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .flex {
+        padding: 20px
+    }
+
+    .menu {
+        width: 15%;
+        float: left;
+        height: 100vh;
+        background: #171717;
+
+    }
+
+    .menu-icons {
+        width: 30px;
+        margin: 10px;
+        margin-bottom: 35px;
+    }
+
+
+
+}

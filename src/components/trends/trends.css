@@ -1,0 +1,16 @@
+.trends {
+    width: 25%;
+    float: left;
+    height: 100vh;
+    background: #171717;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .trends {
+        width: 15%;
+        float: left;
+        height: 100vh;
+        background: #171717;
+    }
+}
