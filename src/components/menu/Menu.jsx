@@ -6,15 +6,15 @@ const Menu = () => {
             <div className="menu">
 
                 <div className="flex">
-                    <img src='./src/assets/twitter.png' className='menu-icons' />
-                    <img src='./src/assets/home.png' className='menu-icons' />
-                    <img src='./src/assets/search.png' className='menu-icons' />
-                    <img src='./src/assets/bell.png' className='menu-icons' />
-                    <img src='./src/assets/message.png' className='menu-icons' />
-                    <img src='./src/assets/bookmark.png' className='menu-icons' />
-                    <img src='./src/assets/user.png' className='menu-icons' />
-                    <img src='./src/assets/more.png' className='menu-icons' />
-                    <img src='./src/assets/message.png' className='menu-icons' />
+                    <img src='images/twitter.png' className='menu-icons' />
+                    <img src='images/home.png' className='menu-icons' />
+                    <img src='images/search.png' className='menu-icons' />
+                    <img src='images/bell.png' className='menu-icons' />
+                    <img src='images/message.png' className='menu-icons' />
+                    <img src='images/bookmark.png' className='menu-icons' />
+                    <img src='images/user.png' className='menu-icons' />
+                    <img src='images/more.png' className='menu-icons' />
+                    <img src='images/message.png' className='menu-icons' />
                 </div>
             </div>
 
