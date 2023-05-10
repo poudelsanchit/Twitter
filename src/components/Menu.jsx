@@ -16,21 +16,33 @@ const Menu = () => {
                     </div>
                     <div className="EachMenu">
                         <FaTwitter color='#ffffff' size={25} />
+                        <spam>Hello</spam>
+
                     </div>
                     <div className="EachMenu">
                         <FaTwitter color='#ffffff' size={25} />
+                        <spam>Hello</spam>
+
                     </div>
                     <div className="EachMenu">
                         <FaTwitter color='#ffffff' size={25} />
+                        <spam>Hello</spam>
+
                     </div>
                     <div className="EachMenu">
                         <FaTwitter color='#ffffff' size={25} />
+                        <spam>Hello</spam>
+
                     </div>
                     <div className="EachMenu">
                         <FaTwitter color='#ffffff' size={30} />
+                        <spam>Hello</spam>
+
                     </div>
                     <div className="EachMenu">
                         <FaTwitter color='#ffffff' size={30} />
+                        <spam>Hello</spam>
+
                     </div>
                 </div>
             </div>
