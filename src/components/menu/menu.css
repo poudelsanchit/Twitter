@@ -1,20 +1,8 @@
-.flex {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.menu {
-    width: 25%;
-    float: left;
-    height: 100vh;
-    background: #171717;
-}
-
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .flex {
-        padding: 20px
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
     }
 
     .menu {
@@ -26,9 +14,9 @@
     }
 
     .menu-icons {
-        width: 30px;
-        margin: 10px;
-        margin-bottom: 35px;
+
+        font-size: 30px;
+        color: #00acee;
     }
 
 
