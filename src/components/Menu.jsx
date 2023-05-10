@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaTwitter, FaHome, FaBell } from "react-icons/fa";
 import { AiOutlineMessage } from "react-icons/ai";
 import { CiHashtag, CiBookmark, CiTwitter, CiHome, CiBellOn, CiViewList, CiUser, CiCircleMore } from "react-icons/ci";
 

@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Menu from './components/Menu'
 import Tweeets from './components/Tweets'
