@@ -10,12 +10,10 @@ function App() {
   return (
     <>
       <div className='container'>
-        <div className="layouts">
-          <Menu />
-          <Tweeets />
-          <Trends />
-        </div>
-      </div>
+        <Menu />
+        <Tweeets />
+        <Trends />
+      </div >
     </>
   )
 }

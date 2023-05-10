@@ -12,38 +12,63 @@
 .container {
   height: 100%;
   margin: 0;
-
-
+  display: flex;
 }
 
-.layouts {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 25% 50% 25%;
-}
 
 .menu {
   background-color: #171717;
-  display: grid;
-  grid-template-columns: 30% 70%;
-  overflow: hidden;
-
-}
-
-.menus {
-  display: grid;
-  grid-template-columns: auto;
-}
-
-.EachMenu {
+  flex: 1;
   display: flex;
   flex-direction: row;
+
+}
+
+.menu1 {
+  flex: 1;
+}
+
+.menu2 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.items {
+  flex: 2;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  flex: 1;
+  height: 100%;
+  height: 30px;
+}
+
+.text {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
 }
 
 .tweets {
-  background-color: #1e1e1e;
+  background-color: #2e2929;
+  flex: 2;
+  float: left;
+
 }
 
 .trends {
-  background-color: #171717;
+  flex: 1;
+  background-color: rgb(43, 27, 27);
 }
