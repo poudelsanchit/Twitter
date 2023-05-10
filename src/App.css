@@ -1,11 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
 
-body {
+
+* {
   margin: 0;
-  background: #171717;
-  font-weight: 400;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   height: 100%;
   color: white;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.container {
+  height: 100%;
+  margin: 0;
+
+
+}
+
+.layouts {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.menu {
+  background-color: #171717;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  overflow: hidden;
+
+}
+
+.menus {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.EachMenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.tweets {
+  background-color: #1e1e1e;
+}
+
+.trends {
+  background-color: #171717;
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import './trends.css'
 
 const Trends = () => {
     return (
@@ -7,6 +6,7 @@ const Trends = () => {
             <div className="trends">
 
             </div>
+
         </>
     )
 }

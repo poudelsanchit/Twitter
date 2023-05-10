@@ -1,17 +1,21 @@
 import { useState } from 'react'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Menu from './components/menu/Menu'
-import Tweeets from './components/tweets/Tweets'
-import Trends from './components/trends/Trends'
+import Menu from './components/Menu'
+import Tweeets from './components/Tweets'
+import Trends from './components/Trends'
 
 function App() {
 
   return (
     <>
-      <Menu />
-      <Tweeets />
-      <Trends />
+      <div className='container'>
+        <div className="layouts">
+          <Menu />
+          <Tweeets />
+          <Trends />
+        </div>
+      </div>
     </>
   )
 }
