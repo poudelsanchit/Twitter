@@ -37,6 +37,10 @@ const Menu = () => {
                     <div className="items">
                         <CiCircleMore className='icon' /><p className='text'>More</p>
                     </div>
+                    <div className="items">
+                        <CiCircleMore className='icon' /><p className='text'>More</p>
+                    </div>
+
                 </div>
             </div >
         </>
