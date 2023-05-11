@@ -1,0 +1,57 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    height: 680px;
+}
+
+.space-left {
+    flex: 1;
+}
+
+.image {
+    width: 468px;
+    height: 584px;
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.space-right {
+    flex: 1;
+}
+
+.img {
+    width: 468px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.header {
+    height: auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.profile-image {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 15px;
+
+
+
+}
