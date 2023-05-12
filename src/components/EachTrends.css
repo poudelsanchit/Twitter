@@ -1,0 +1,28 @@
+.eachtrendslist {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    width: 348.400px;
+    height: 81px;
+    flex-direction: column;
+}
+
+.eachtrendslist:hover {
+    background-color: #1d1f23;
+}
+
+.trendtype {
+    font-size: 13px;
+    color: #6b7076;
+}
+
+.trendname {
+    font-size: 15px;
+
+}
+
+.tweetcounts {
+    font-size: 13px;
+    color: #6b7076;
+}
