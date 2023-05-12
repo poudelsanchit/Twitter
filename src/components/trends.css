@@ -22,3 +22,10 @@
     font-size: large;
     height: 30px;
 }
+
+@media screen and (max-width:1130px) {
+    .cardtrends {
+        width: 300px;
+
+    }
+}

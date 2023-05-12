@@ -104,11 +104,15 @@
   }
 
   .tweets {
-    flex: 6;
+    flex: 4;
+  }
+
+  .trends {
+    flex: 2.5;
   }
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 1052px) {
   .menu {
     width: 50px;
   }
@@ -142,10 +146,16 @@
     background-color: #192734;
 
   }
+}
 
 
+@media screen and (max-width: 624px) {
+  .menu {
+    display: none;
+  }
 
-
-
+  .tweets {
+    width: 100%;
+  }
 
 }
