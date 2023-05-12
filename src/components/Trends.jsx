@@ -25,7 +25,6 @@ const Trends = () => {
                     </div>
                 </div>
 
-                <div className="cardtrends"></div>
 
 
             </div>
