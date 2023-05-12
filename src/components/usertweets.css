@@ -34,9 +34,15 @@
 
 }
 
-.header {
+.mainheader {
+    display: flex;
+    flex-direction: column;
     height: auto;
-    padding-bottom: 30px;
+
+}
+
+.subheader {
+    height: auto;
     padding-top: 30px;
     display: flex;
     align-items: center;
@@ -45,13 +51,30 @@
 }
 
 .profile-image {
+    position: relative;
+    cursor: pointer;
     height: 40px;
     width: 40px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid white;
     margin-right: 15px;
+}
 
+.headertext {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 5px;
+}
 
+.username {
+    cursor: pointer;
 
+}
+
+.tweettext {
+
+    inline-size: 402px;
+    overflow-wrap: break-word;
 }

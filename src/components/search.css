@@ -1,0 +1,19 @@
+.Wrapper {
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+#input {
+    width: 70%;
+    height: 40px;
+    border-radius: 13px;
+    border-color: transparent;
+    background-color: #202327;
+    font-size: 15px;
+    padding-left: 30px;
+}
+
+#input:focus {
+    outline: none;
+}

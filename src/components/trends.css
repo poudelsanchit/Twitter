@@ -1,0 +1,14 @@
+.searchbox {
+    height: 80px
+}
+
+
+.cardtrends {
+    height: 500px;
+    width: 80%;
+    background-color: #202327;
+    border-radius: 6px;
+    margin: 30px;
+    margin-left: 10px;
+    margin-top: 0px
+}
