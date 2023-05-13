@@ -60,21 +60,68 @@
     margin-right: 15px;
 }
 
+.commentsection {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.retweets {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.comments {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.likes {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.views {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .username {
     cursor: pointer;
     height: 20px;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
 }
 
 .tweettext {
-
-    font-size: 15px;
+    padding-top: 2px;
+    font-size: 14px;
     inline-size: 402px;
     font-weight: 400;
     overflow-wrap: break-word;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .headertext {

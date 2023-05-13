@@ -18,6 +18,23 @@ const UserTweets = ({ username, image, tweettext, profilepic }) => {
                         <div class="image">
                             <img src={image} alt="Jersy" className='img' />
                         </div>
+                        <div className="commentsection">
+                            <div className="comments">
+                                Comments
+                            </div>
+                            <div className="retweets">
+                                ReTweets
+                            </div>
+                            <div className="likes">
+                                Likes
+                            </div>
+                            <div className="views">
+                                Views
+                            </div>
+                            <div className="share">
+                                Share
+                            </div>
+                        </div>
                     </div>
 
                 </div>
