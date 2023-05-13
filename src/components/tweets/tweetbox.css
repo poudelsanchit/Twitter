@@ -47,7 +47,7 @@
 
 #tweetinput {
     width: 100%;
-    height: 70px;
+    height: 150px;
     border-color: transparent;
     background-color: #111111;
     font-size: 15px;
@@ -57,4 +57,24 @@
 
 #tweetinput:focus {
     outline: none;
+}
+
+.tweetbutton {
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #1d9bf0;
+    height: 40px;
+    float: right;
+    width: 80px;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #1772ae;
+    cursor: pointer;
 }

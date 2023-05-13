@@ -17,6 +17,10 @@ const TweetBox = () => {
                 </div>
                 <div className="tweetboxform">
                     <input type="text" id="tweetinput" placeholder="What is happening?!" />
+                    <div className="tweetbutton">
+                        <button class="button">Tweet</button>
+
+                    </div>
                 </div>
             </div>
         </div>
