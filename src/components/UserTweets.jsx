@@ -1,5 +1,10 @@
 import React from 'react'
 import './usertweets.css'
+import { FaRegComment } from "react-icons/fa";
+import { FiShare } from "react-icons/fi";
+import { AiOutlineRetweet, AiOutlineHeart } from "react-icons/ai";
+import { FiBarChart2 } from "react-icons/fi";
+
 const UserTweets = ({ username, image, tweettext, profilepic }) => {
     return (
         <>
@@ -20,19 +25,27 @@ const UserTweets = ({ username, image, tweettext, profilepic }) => {
                         </div>
                         <div className="commentsection">
                             <div className="comments">
-                                Comments
+                                <FaRegComment />
+                                <span className='commenttext'>3535</span>
                             </div>
                             <div className="retweets">
-                                ReTweets
+                                <AiOutlineRetweet />
+                                <span className='commenttext'>1818</span>
+
                             </div>
                             <div className="likes">
-                                Likes
+                                <AiOutlineHeart />
+                                <span className='commenttext'>17.9k</span>
+
                             </div>
                             <div className="views">
-                                Views
+                                <FiBarChart2 />
+                                <span className='commenttext'>3M</span>
+
                             </div>
                             <div className="share">
-                                Share
+                                <FiShare />
+
                             </div>
                         </div>
                     </div>

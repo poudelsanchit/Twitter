@@ -83,6 +83,14 @@
     justify-content: center;
 }
 
+.commenttext {
+    color: #71767b;
+    padding-left: 3px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
 .likes {
     flex: 1;
     display: flex;
