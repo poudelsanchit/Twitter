@@ -1,6 +1,6 @@
-import Menu from '../components/Menu'
-import Tweeets from '../components/Tweets'
-import Trends from '../components/Trends'
+import Menu from '../components/menu/Menu'
+import Tweeets from '../components/tweets/Tweets'
+import Trends from '../components/trends/Trends'
 import '../App.css'
 const Home = () => {
 
