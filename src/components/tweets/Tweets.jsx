@@ -74,7 +74,7 @@ const Tweets = () => {
             <div className="tweets">
                 {/* tweetbox */}
 
-                <TweetBox />
+                <TweetBox setShouldRefresh={setShouldRefresh} />
 
 
 
