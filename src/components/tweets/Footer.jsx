@@ -1,15 +1,22 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { FaRegComment } from "react-icons/fa";
 import { FiShare } from "react-icons/fi";
 import { AiOutlineRetweet, AiOutlineHeart } from "react-icons/ai";
 import { FiBarChart2 } from "react-icons/fi";
-const Footer = ({ commentcounts, likecountcounts, retweetcounts, viewscounts, }) => {
+const Footer = ({ commentcounts, likecountcounts, retweetcounts, viewscounts, id }) => {
+    const navigate = useNavigate();
+    const navigateToTweet = () => {
+        navigate(`/tweet/${id}`);
+
+    }
+
     return (
         <>
             <div className="commentsection">
                 <div className="comments">
                     <FaRegComment />
-                    <span className='commenttext'>{commentcounts}</span>
+                    <span className='commenttext' onClick={navigateToTweet}>{commentcounts}</span>
                 </div>
                 <div className="retweets">
                     <AiOutlineRetweet />
@@ -32,7 +39,7 @@ const Footer = ({ commentcounts, likecountcounts, retweetcounts, viewscounts, })
                 </div>
             </div>
         </>
-    )
+    );
 }
 
 export default Footer

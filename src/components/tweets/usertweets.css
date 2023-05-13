@@ -50,6 +50,10 @@
 
 }
 
+#profilepic {
+    margin-top: 0
+}
+
 .profile-image {
     position: relative;
     cursor: pointer;
