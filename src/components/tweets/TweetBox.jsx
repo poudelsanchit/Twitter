@@ -1,14 +1,18 @@
-import React from 'react'
 import './tweetbox.css'
+import { useState } from 'react';
 const TweetBox = () => {
+    const [tweetContent, setTweetContent] = useState('');
+    const handleSubmit = () => {
+        console.log(tweetContent)
+    }
     return (
         <div className='tweetbox'>
             <div className="tweetboxheader">
-                <p className='tweethome'>
+                <div className='tweethome'>
                     <p className='tweethometext'>
                         Home
                     </p>
-                </p>
+                </div>
             </div>
             <div className="tweetboxmain">
                 <div className="tweetboximage">
@@ -16,9 +20,9 @@ const TweetBox = () => {
 
                 </div>
                 <div className="tweetboxform">
-                    <input type="text" id="tweetinput" placeholder="What is happening?!" />
+                    <input type="text" id="tweetinput" placeholder="What is happening?!" required value={tweetContent} onChange={(e) => setTweetContent(e.target.value)} />
                     <div className="tweetbutton">
-                        <button class="button">Tweet</button>
+                        <button className="button" onClick={handleSubmit}>Tweet</button>
 
                     </div>
                 </div>
