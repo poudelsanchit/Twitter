@@ -1,0 +1,60 @@
+.tweetbox {
+    height: 250px;
+    border-bottom: 0.25px solid #2f3336;
+    display: flex;
+    flex-direction: column;
+}
+
+.tweethome {
+    height: 60px;
+    border-bottom: 0.25px solid #2f3336;
+
+}
+
+.tweetboxheader {
+    height: 60px;
+}
+
+
+.tweethometext {
+    padding: 10px;
+    font-size: 22px;
+}
+
+.tweetboxmain {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tweetboxform {
+    display: flex;
+    flex-direction: column;
+    width: 86%;
+}
+
+.tweetboximage {
+    padding-left: 20px;
+}
+
+.tweetboxmain {
+    padding-top: 20px;
+}
+
+.profile-image {
+    margin-top: 20px;
+}
+
+#tweetinput {
+    width: 100%;
+    height: 70px;
+    border-color: transparent;
+    background-color: #111111;
+    font-size: 15px;
+    border-bottom: 0.25px solid #2f3336;
+
+}
+
+#tweetinput:focus {
+    outline: none;
+}

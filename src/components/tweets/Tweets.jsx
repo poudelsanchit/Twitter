@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import UserTweets from './UserTweets'
 import axios from 'axios';
+import TweetBox from './TweetBox';
 const Tweets = () => {
     const [users, setUser] = useState([]);
     const [shouldRefresh, setShouldRefresh] = useState(false);
@@ -71,6 +72,14 @@ const Tweets = () => {
     return (
         <>
             <div className="tweets">
+                {/* tweetbox */}
+
+                <TweetBox />
+
+
+
+
+
                 {
                     users.map(({ user, content, image, _id }) => {
                         return <UserTweets image={image} username={user.name} profilepic={image} tweettext={content} commentcounts={8} likecountcounts={7} retweetcounts={7} viewscounts={9} key={_id} />
