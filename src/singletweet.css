@@ -1,0 +1,19 @@
+#root {
+    background-color: #111111;
+}
+
+.singletweet {
+    display: flex;
+}
+
+.tweetleftspace {
+    flex: 1;
+}
+
+.eachtweet {
+    flex: 1;
+}
+
+.comments {
+    flex: 1
+}
