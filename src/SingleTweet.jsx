@@ -2,8 +2,8 @@ import React from 'react'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import UserTweets from './components/tweets/UserTweets';
 import './singletweet.css'
+import Footer from './components/tweets/Footer';
 const SingleTweet = () => {
     const { id } = useParams();
     const [tweet, setTweet] = useState(null);
@@ -21,13 +21,24 @@ const SingleTweet = () => {
     return (
         <>
             <div className="singletweet">
-                <div className="tweetleftspace"></div>
+                <div className="singletweetleft">
+                    
+                </div>
                 <div className='eachtweet'>
+
                     {
-                        tweet ? <UserTweets tweettext={tweet.content} commentcounts={8} username={tweet.user.fullname} image={tweet.image} profilepic={'https://avatars.githubusercontent.com/u/' + tweet.user.githubId + '?v=4'} key={tweet._id} id={id} /> : null
+                        tweet ?
+                            <>
+
+                                <img src={tweet.image} alt="Jersy" className='singletweetimage' />
+                                <div className="singletweetfooter">
+                                    <Footer commentcounts={2} likecountcounts={22} viewscounts={222} retweetcounts={22} />
+                                </div>
+                            </>
+                            : null
                     }
                 </div>
-                <div className="comments">
+                <div className="comments1">
                     Hello
                 </div>
             </div>

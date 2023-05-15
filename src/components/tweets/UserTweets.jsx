@@ -1,6 +1,5 @@
 import React from 'react'
 import './usertweets.css'
-
 import Footer from './Footer';
 import TweetImage from './Image';
 import TweetHeader from './TweetHeader';

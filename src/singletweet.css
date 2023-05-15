@@ -4,6 +4,11 @@
 
 .singletweet {
     display: flex;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
 }
 
 .tweetleftspace {
@@ -11,9 +16,51 @@
 }
 
 .eachtweet {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.singletweetimage {
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+.hello {
+    border-bottom: none;
+}
+
+.singletweetleft {
     flex: 1;
 }
 
-.comments {
-    flex: 1
+.singletweetfooter {
+    height: 10px;
+}
+
+.comments1 {
+    flex: 2;
+    margin-left: 30px;
+    border-left: 0.25px solid #2f3336;
+}
+
+.singletweetimage {
+    height: 90%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 948px) {
+    .comments1 {
+        display: none;
+    }
+
+    .singletweetimage {
+        padding: 0;
+    }
+
+    .singletweetleft {
+        display: none;
+    }
+
 }
