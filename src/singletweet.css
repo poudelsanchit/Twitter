@@ -8,16 +8,24 @@
 }
 
 .tweetcommentcontent {
+    padding-left: 20px;
+    padding-right: 20px;
     height: auto;
 }
 
 .tweettime {
+    padding-left: 20px;
     padding-top: 10px;
     height: 30px;
     font-size: 14px;
     color: grey;
     border-bottom: 0.25px solid #2f3336;
 
+}
+
+div.retweetsquotes {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .singletweet {
@@ -58,9 +66,8 @@
 }
 
 .singletweetcomments {
-    height: auto;
-    width: 300px;
-    padding: 20px;
+    flex: 1;
+    width: 100%;
     border-left: 0.25px solid #2f3336;
     display: flex;
     flex-direction: column;
@@ -73,6 +80,9 @@
 }
 
 .singletweetheader {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 65px;
     display: flex;
     flex-direction: row;
@@ -103,6 +113,7 @@
     border-bottom: 0.25px solid #2f3336;
     column-gap: 3px;
 
+
 }
 
 .eachcommenticons {
@@ -116,15 +127,65 @@
     width: 20px;
 }
 
-.replytweet {
-    border-bottom: 0.25px solid #2f3336;
+.replytweets {
     height: 100px;
+    display: flex;
+    flex-direction: row;
 }
 
 .tweetcontent {
     inline-size: 100%;
     overflow-wrap: break-word;
     height: auto;
+}
+
+.replytweetform {
+    inline-size: 100%;
+    overflow-wrap: break-word;
+    height: auto;
+    flex: 1;
+}
+
+.replytweetimage {
+    padding: 20px 0 0 20px;
+}
+
+#tweetinput2 {
+    width: 100%;
+    height: 90%;
+    border-color: transparent;
+    background-color: #111111;
+    font-size: 15px;
+}
+
+#tweetinput2:focus {
+    outline: none;
+}
+
+.replytweetsmain {
+    border-bottom: 0.25px solid #2f3336;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+}
+
+.replybutton {
+    padding-right: 20px;
+}
+
+.userscomments {
+    width: 100%;
+    inline-size: 100%;
+    overflow-wrap: break-word;
+    border-left: 0.25px solid #2f3336;
+
+}
+
+.comment-section {
+    overflow-y: auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 948px) {
