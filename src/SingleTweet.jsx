@@ -4,6 +4,12 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import './singletweet.css'
 import Footer from './components/tweets/Footer';
+import { FaRegComment } from "react-icons/fa";
+import { AiOutlineHeart, AiOutlineRetweet } from "react-icons/ai";
+import { FiShare, FiBookmark } from "react-icons/fi";
+
+import ProfileImage from './components/tweets/ProfileImage';
+import TweetBox from './components/tweets/TweetBox';
 const SingleTweet = () => {
     const { id } = useParams();
     const [tweet, setTweet] = useState(null);
@@ -22,7 +28,7 @@ const SingleTweet = () => {
         <>
             <div className="singletweet">
                 <div className="singletweetleft">
-                    
+
                 </div>
                 <div className='eachtweet'>
 
@@ -38,12 +44,47 @@ const SingleTweet = () => {
                             : null
                     }
                 </div>
-                <div className="comments1">
-                    Hello
-                </div>
-            </div>
+                {tweet ?
+                    <>
+                        <div className="singletweetcomments">
+                            <div className="singletweetheader">
+                                <ProfileImage profilepic={'https://avatars.githubusercontent.com/u/' + tweet.user.githubId + '?v=4'} />
+                                <div className='subheader'>
+                                    <div className='headertext'>
+                                        <p className='username'>{tweet.user.fullname} </p>
+                                        <p className='singleusername'  >{'@' + tweet.user.name}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tweetcommentcontent">
+                                <p className="tweetcontent">{tweet.content}</p>
+                            </div>
+                            <div className="tweettime">2:44 AM · May 18, 2023 · 1M Views</div>
+                            <div className="retweetsquotes">
+                                854 <span className='retweetsquoteslight'>Retweets </span>
+                                <span className='spacemiddle'></span>
+                                300 <span className='retweetsquoteslight'>Quotes</span>
+                            </div>
+                            <div className="retweetsquotes">
+                                26.8k <span className='retweetsquoteslight'>Likes </span>
+                                <span className='spacemiddle'></span>
+                                678 <span className='retweetsquoteslight'>Bookmarks</span>
+                            </div>
+                            <div className="commenticons">
+                                <p className="eachcommenticons">   <FaRegComment className='commenticon' /></p>
+                                <p className="eachcommenticons">   <AiOutlineRetweet className='commenticon' /></p>
+                                <p className="eachcommenticons">   <AiOutlineHeart className='commenticon' /></p>
+                                <p className="eachcommenticons">   <FiBookmark className='commenticon' /></p>
+                                <p className="eachcommenticons">   <FiShare className='commenticon' /></p>
+
+                            </div>
+
+                        </div>
+                    </>
+                    : null}
+
+            </div >
         </>
     )
 }
-
 export default SingleTweet
