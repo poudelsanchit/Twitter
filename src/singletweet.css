@@ -8,7 +8,7 @@
 }
 
 .tweetcommentcontent {
-    height: 30px;
+    height: auto;
 }
 
 .tweettime {
@@ -58,6 +58,7 @@
 }
 
 .singletweetcomments {
+    height: auto;
     width: 300px;
     padding: 20px;
     border-left: 0.25px solid #2f3336;
@@ -117,6 +118,12 @@
 .replytweet {
     border-bottom: 0.25px solid #2f3336;
     height: 100px;
+}
+
+.tweetcontent {
+    inline-size: 100%;
+    overflow-wrap: break-word;
+    height: auto;
 }
 
 @media screen and (max-width: 948px) {

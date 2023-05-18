@@ -7,9 +7,8 @@ import Footer from './components/tweets/Footer';
 import { FaRegComment } from "react-icons/fa";
 import { AiOutlineHeart, AiOutlineRetweet } from "react-icons/ai";
 import { FiShare, FiBookmark } from "react-icons/fi";
-
 import ProfileImage from './components/tweets/ProfileImage';
-import TweetBox from './components/tweets/TweetBox';
+
 const SingleTweet = () => {
     const { id } = useParams();
     const [tweet, setTweet] = useState(null);
@@ -59,6 +58,7 @@ const SingleTweet = () => {
                             <div className="tweetcommentcontent">
                                 <p className="tweetcontent">{tweet.content}</p>
                             </div>
+
                             <div className="tweettime">2:44 AM · May 18, 2023 · 1M Views</div>
                             <div className="retweetsquotes">
                                 854 <span className='retweetsquoteslight'>Retweets </span>
@@ -78,6 +78,7 @@ const SingleTweet = () => {
                                 <p className="eachcommenticons">   <FiShare className='commenticon' /></p>
 
                             </div>
+
 
                         </div>
                     </>
