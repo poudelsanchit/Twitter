@@ -69,6 +69,7 @@
 .singletweetimage {
     height: 90%;
     padding: 10px;
+    padding-left: 0;
 }
 
 .singletweetheader {
