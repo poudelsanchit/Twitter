@@ -2,6 +2,58 @@
     background-color: #111111;
 }
 
+.comment-section {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.singletweetcomments {
+    flex: 1;
+    width: 100%;
+    border-left: 0.25px solid #2f3336;
+    display: flex;
+    flex-direction: column;
+}
+
+.userscomments {
+    width: 100%;
+    border-left: 0.25px solid #2f3336;
+}
+
+/* Comments style */
+.individualcomments {
+    border-bottom: 0.25px solid #2f3336;
+    height: 90px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-fullname {
+    font-size: 15px;
+}
+
+.commenttextheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comment-fullname {
+    font-weight: 900;
+    float: left;
+    flex: 1;
+}
+
+.comment-content {
+    flex: 3;
+    font-size: 14px;
+}
+
 .singleusername {
     color: grey;
     font-size: 15px;
@@ -65,13 +117,6 @@ div.retweetsquotes {
     height: 10px;
 }
 
-.singletweetcomments {
-    flex: 1;
-    width: 100%;
-    border-left: 0.25px solid #2f3336;
-    display: flex;
-    flex-direction: column;
-}
 
 .singletweetimage {
     height: 90%;
@@ -111,9 +156,6 @@ div.retweetsquotes {
     display: flex;
     flex-direction: row;
     border-bottom: 0.25px solid #2f3336;
-    column-gap: 3px;
-
-
 }
 
 .eachcommenticons {
@@ -123,9 +165,7 @@ div.retweetsquotes {
     flex: 1;
 }
 
-.commenticon {
-    width: 20px;
-}
+
 
 .replytweets {
     height: 100px;
@@ -173,20 +213,8 @@ div.retweetsquotes {
     padding-right: 20px;
 }
 
-.userscomments {
-    width: 100%;
-    inline-size: 100%;
-    overflow-wrap: break-word;
-    border-left: 0.25px solid #2f3336;
 
-}
 
-.comment-section {
-    overflow-y: auto;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-}
 
 @media screen and (max-width: 948px) {
     .comments1 {

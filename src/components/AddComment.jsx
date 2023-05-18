@@ -28,25 +28,6 @@ const AddComment = ({ tweet, id }) => {
         }
     };
 
-    //fetching data through API
-    const [comments, getComments] = useState([]);
-
-    const fetchCommentsContent = async () => {
-        try {
-            const comments = await axios.get(`https://react-workshop-todo.fly.dev/posts/${id}`, {
-                headers: {
-                    apiKey: '6457383b7213f63d43544ac0',
-                },
-            });
-            getComments(comments.data.post.comments);
-        } catch (error) {
-            console.log(error);
-        }
-    };
-    //useEffect
-    useEffect(() => {
-        fetchCommentsContent();
-    }, []);
 
     return (
         <>
@@ -63,14 +44,6 @@ const AddComment = ({ tweet, id }) => {
                     <button className="button" onClick={handleCommentSubmit} >Reply</button>
                 </div>
             </div>
-            {comments.map((data) => (
-                <>
-                    <p>{data.user.name}</p>
-
-                    <p>{data.content}</p>
-                </>
-
-            ))}
 
         </>
     )

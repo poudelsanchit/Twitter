@@ -8,10 +8,11 @@ import { FaRegComment } from "react-icons/fa";
 import { AiOutlineHeart, AiOutlineRetweet } from "react-icons/ai";
 import { FiShare, FiBookmark } from "react-icons/fi";
 import ProfileImage from './components/tweets/ProfileImage';
-import UserComments from './components/UserComments';
 import AddComment from './components/AddComment';
+import UserComments from './components/UserComments';
 
 const SingleTweet = () => {
+
     const { id } = useParams();
     const [tweet, setTweet] = useState(null);
     const fetchTweet = async () => {
@@ -25,6 +26,10 @@ const SingleTweet = () => {
     useEffect(() => {
         fetchTweet();
     }, []);
+
+
+
+
     return (
         <>
             <div className="singletweet">
@@ -81,8 +86,11 @@ const SingleTweet = () => {
                                     <p className="eachcommenticons">   <FiShare className='commenticon' /></p>
                                 </div>
                                 <AddComment tweet={tweet} id={tweet._id} />
-                            </div>
 
+                            </div>
+                            <div className="userscomments">
+                                <UserComments id={id} />
+                            </div>
                         </div>
 
 
