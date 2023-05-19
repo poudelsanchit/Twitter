@@ -14,9 +14,9 @@ const Footer = ({ commentcounts, likecountcounts, retweetcounts, viewscounts, id
     return (
         <>
             <div className="commentsection">
-                <div className="comments">
+                <div className="comments" onClick={navigateToTweet}>
                     <FaRegComment />
-                    <span className='commenttext' onClick={navigateToTweet}>{commentcounts}</span>
+                    <span className='commenttext'>{commentcounts}</span>
                 </div>
                 <div className="retweets">
                     <AiOutlineRetweet />

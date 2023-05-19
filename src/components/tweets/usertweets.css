@@ -7,9 +7,14 @@
     border-bottom: 0.25px solid #2f3336;
 }
 
+.tweetmainiamge {
+    cursor: pointer;
+}
+
 .space-left {
     flex: 1;
 }
+
 .image {
     width: 468px;
     height: 584px;
@@ -82,6 +87,7 @@
 }
 
 .comments {
+    cursor: pointer;
     flex: 1;
     display: flex;
     align-items: center;

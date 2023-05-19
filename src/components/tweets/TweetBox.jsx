@@ -13,7 +13,7 @@ const TweetBox = ({ setShouldRefresh }) => {
             </div>
             <div className="tweetboxmain">
                 <div className="tweetboximage">
-                    <img src='https://pbs.twimg.com/profile_images/1526927042033250304/TJqo3n55_400x400.jpg' alt="Jersy" className='profile-image' />
+                    <img src='https://pbs.twimg.com/profile_images/1526927042033250304/TJqo3n55_400x400.jpg' className='profile-image' />
 
                 </div>
                 <InputTweet setShouldRefresh={setShouldRefresh} />
