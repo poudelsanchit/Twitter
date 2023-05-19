@@ -34,7 +34,7 @@ const AddComment = ({ tweet, id }) => {
             <div className="replytweetsmain">
                 <div className="replytweets">
                     <div className="replytweetimage">
-                        <ProfileImage profilepic={'https://avatars.githubusercontent.com/u/' + tweet.user.githubId + '?v=4'} />
+                        <ProfileImage profilepic={'https://avatars.githubusercontent.com/u/50201318?v=4'} />
                     </div>
                     <div className='replytweetform'>
                         <input type="text" id="tweetinput2" placeholder="Tweet your reply!" required="" value={comment} onChange={(e) => setCommentContent(e.target.value)} />
