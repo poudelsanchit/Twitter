@@ -34,7 +34,7 @@ const UserTweets = ({ username, image, tweettext, profilepic, commentcounts, lik
                 <div className='content'>
                     <ProfileImage profilepic={profilepic} />
                     <div className="mainheader">
-                        <TweetHeader tweettext={tweettext} username={username} />
+                        <TweetHeader tweettext={tweettext} username={username} id={id} />
                         <TweetImage image={image} id={id} />
                         <Footer commentcounts={commentcounts} likecountcounts={likecountcounts} retweetcounts={retweetcounts} viewscounts={viewscounts} id={id} />
                     </div>
