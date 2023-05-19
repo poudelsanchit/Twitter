@@ -14,9 +14,9 @@ const Trends = () => {
                         <div className="trendsheader">Trends For you</div>
                         <div className="trendslist">
                             <EachTrends trendtype={'Sports - Trending'} trendname={'UEFA'} tweetcounts={'52.9k Tweets'} />
-                            <EachTrends trendtype={'Sports - Trending'} trendname={'UEFA'} tweetcounts={'52.9k Tweets'} />
-                            <EachTrends trendtype={'Sports - Trending'} trendname={'UEFA'} tweetcounts={'52.9k Tweets'} />
-                            <EachTrends trendtype={'Sports - Trending'} trendname={'UEFA'} tweetcounts={'52.9k Tweets'} />
+                            <EachTrends trendtype={'Sports - Trending'} trendname={'Cristiano Ronaldo'} tweetcounts={'105k Tweets'} />
+                            <EachTrends trendtype={'Nepal - Politics'} trendname={'Balen'} tweetcounts={'9.9k Tweets'} />
+                            <EachTrends trendtype={'Business man - Trending'} trendname={'Elon Musk'} tweetcounts={'97.9k Tweets'} />
 
 
                         </div>
