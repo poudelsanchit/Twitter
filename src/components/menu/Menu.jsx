@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiOutlineMessage } from "react-icons/ai";
 import { CiHashtag, CiBookmark, CiTwitter, CiHome, CiBellOn, CiViewList, CiUser, CiCircleMore } from "react-icons/ci";
+import ProfileImage from '../tweets/ProfileImage';
 
 
 const Menu = () => {
@@ -38,7 +39,15 @@ const Menu = () => {
                         <CiCircleMore className='icon' /><p className='text'>More</p>
                     </div>
 
-
+                    <div className="items">
+                        <p className="icon profileicon">
+                            <ProfileImage profilepic={'https://pbs.twimg.com/profile_images/1526927042033250304/TJqo3n55_400x400.jpg'} />
+                        </p>
+                        <p className='text profiletext'>
+                            <p className='profilename'>Sanchit Poudel</p>
+                            <p className='profileusername'>@PoudelSanchit</p>
+                        </p>
+                    </div>
                 </div>
             </div >
         </>

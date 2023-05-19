@@ -58,6 +58,31 @@
   align-items: center;
 }
 
+.profiletext {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.profilename {
+  font-weight: 900;
+  display: flex;
+  align-items: end;
+}
+
+.profileusername {
+  color: grey;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.icon.profileicon {
+  display: flex;
+  float: right;
+  justify-content: end;
+}
+
 .item {
   width: 100px;
   height: 100px;
