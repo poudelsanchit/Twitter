@@ -5,10 +5,26 @@ import TweetImage from './Image';
 import TweetHeader from './TweetHeader';
 import ProfileImage from './ProfileImage';
 import { FiMoreHorizontal, FiTrash, FiShare } from "react-icons/fi";
-import { Prev } from 'react-bootstrap/esm/PageItem';
-
+import axios from 'axios';
 const UserTweets = ({ username, image, tweettext, profilepic, commentcounts, likecountcounts, retweetcounts, viewscounts, id }) => {
+
     const [openDropdown, setOpenDropdown] = useState(false);
+
+    //delete post
+    const handleDeletePost = async () => {
+        console.log(id);
+        try {
+            await axios.delete(`https://react-workshop-todo.fly.dev/posts/${id}`, {
+                headers: {
+                    apiKey: '6457383b7213f63d43544ac0'
+                }
+            });
+            alert('Post deleted sucessfully.')
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
 
     return (
         <>
@@ -29,8 +45,8 @@ const UserTweets = ({ username, image, tweettext, profilepic, commentcounts, lik
                     </div>
                     {openDropdown &&
                         <div id="myDropdown" className='dropdown'>
-                            <FiTrash className='delete-tweet' />
-                            <FiShare />
+                            <li><FiTrash className='delete-tweet' onClick={handleDeletePost} /></li>
+                            <li><FiShare /></li>
                         </div>
 
                     }
