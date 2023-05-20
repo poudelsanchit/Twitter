@@ -2,15 +2,19 @@ import React from 'react'
 import { AiOutlineMessage } from "react-icons/ai";
 import { CiHashtag, CiBookmark, CiTwitter, CiHome, CiBellOn, CiViewList, CiUser, CiCircleMore } from "react-icons/ci";
 import ProfileImage from '../tweets/ProfileImage';
-
+import { useNavigate } from 'react-router-dom';
 
 const Menu = () => {
+    const navigate = useNavigate();
+    const navigateToHome = () => {
+        navigate(`/home`);
+    }
     return (
         <>
             <div className="menu">
                 <div className="menu1"></div>
                 <div className="menu2">
-                    <div className="items">
+                    <div className="items" onClick={navigateToHome}>
                         <CiTwitter className='icon' /><p className='text'> </p>
                     </div>
                     <div className="items">
