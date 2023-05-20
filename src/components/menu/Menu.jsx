@@ -43,10 +43,10 @@ const Menu = () => {
                         <p className="icon profileicon">
                             <ProfileImage profilepic={'https://pbs.twimg.com/profile_images/1526927042033250304/TJqo3n55_400x400.jpg'} />
                         </p>
-                        <p className='text profiletext'>
+                        <div className='text profiletext'>
                             <p className='profilename'>Sanchit Poudel</p>
                             <p className='profileusername'>@PoudelSanchit</p>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div >

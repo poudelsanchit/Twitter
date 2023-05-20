@@ -6,10 +6,8 @@ import TweetHeader from './TweetHeader';
 import ProfileImage from './ProfileImage';
 import { FiMoreHorizontal, FiTrash, FiShare } from "react-icons/fi";
 import axios from 'axios';
-const UserTweets = ({ username, image, tweettext, profilepic, commentcounts, likecountcounts, retweetcounts, viewscounts, id }) => {
-
+const UserTweets = ({ username, image, tweettext, profilepic, commentcounts, likecountcounts, retweetcounts, viewscounts, id, apikey }) => {
     const [openDropdown, setOpenDropdown] = useState(false);
-
     //delete post
     const handleDeletePost = async () => {
         console.log(id);
@@ -34,7 +32,7 @@ const UserTweets = ({ username, image, tweettext, profilepic, commentcounts, lik
                 <div className='content'>
                     <ProfileImage profilepic={profilepic} />
                     <div className="mainheader">
-                        <TweetHeader tweettext={tweettext} username={username} id={id} />
+                        <TweetHeader tweettext={tweettext} username={username} id={id} apikey={apikey} />
                         <TweetImage image={image} id={id} />
                         <Footer commentcounts={commentcounts} likecountcounts={likecountcounts} retweetcounts={retweetcounts} viewscounts={viewscounts} id={id} />
                     </div>

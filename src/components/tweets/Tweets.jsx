@@ -12,7 +12,6 @@ const Tweets = () => {
             }
         });
         setUser(posts.data);
-        console.log(users);
     };
     useEffect(() => {
         fetchTweets();
@@ -77,7 +76,7 @@ const Tweets = () => {
                 <TweetBox setShouldRefresh={setShouldRefresh} />
                 {
                     users.map(({ user, content, image, _id, }) => {
-                        return <UserTweets image={image} username={user.name} profilepic={'https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4'} tweettext={content} commentcounts={8} likecountcounts={7} retweetcounts={7} viewscounts={9} key={_id} id={_id} />
+                        return <UserTweets image={image} username={user.name} profilepic={'https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4'} tweettext={content} commentcounts={8} likecountcounts={7} retweetcounts={7} viewscounts={9} key={_id} id={_id} apikey={user._id} />
                     }
                     )
                 }

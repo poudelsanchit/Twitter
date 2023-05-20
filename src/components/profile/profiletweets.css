@@ -3,6 +3,16 @@
     flex: 2;
     float: left;
     overflow-y: scroll;
+    border-bottom: 0.25px solid #2f3336;
+
+
+}
+
+.individualPost {
+    background-color: #111111;
+    flex: 2;
+    float: left;
+    overflow-y: scroll;
     border-right: 0.25px solid #2f3336;
 
 

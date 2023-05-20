@@ -1,10 +1,10 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const TweetHeader = ({ username, tweettext, id }) => {
+const TweetHeader = ({ username, tweettext, apikey }) => {
     const navigate = useNavigate();
     const navigateToProfile = () => {
-        navigate(`/profile/:${id}`);
+        navigate(`/profile/:${apikey}`);
     }
 
     return (

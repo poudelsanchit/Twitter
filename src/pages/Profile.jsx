@@ -9,7 +9,9 @@ const Profile = () => {
     const [users, setUser] = useState([]);
     const [shouldRefresh, setShouldRefresh] = useState(false);
     const fetchTweets = async () => {
-        const posts = await axios.get(`https://react-workshop-todo.fly.dev/posts/profile/6457383b7213f63d43544ac0`, {
+        let newStr = id.substr(1, id.length - 1);  //here we got apikey with colon infront of it so using this code we can remove 1st character from the string
+        console.log(newStr);
+        const posts = await axios.get(`https://react-workshop-todo.fly.dev/posts/profile/${newStr}`, {
             headers: {
                 apikey: '6457383b7213f63d43544ac0'
             }
@@ -24,10 +26,13 @@ const Profile = () => {
         <>
             <div className='container'>
                 <Menu />
-                {users.map((data) => {
-                    return <ProfileTweets tweet={data.content} />
+                <div className="individualPost">
+                    {users.map((data) => {
+                        return <ProfileTweets tweet={data.content} image={data.image} profilepic={'https://avatars.githubusercontent.com/u/' + data.user.githubId + '?v=4'} username={data.user.fullname} id={data._id} key={data.id} />
+                    })}
 
-                })}
+                </div>
+
                 <Trends />
             </div >
         </>
