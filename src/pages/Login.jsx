@@ -15,6 +15,9 @@ const Login = () => {
         if (counter > 0) {
             navigate(`/home/:${apikey}`);
         }
+        else {
+            alert('Wrong Api Key');
+        }
     }
     //for fetching apikey
     const [users, setUser] = useState([]);
