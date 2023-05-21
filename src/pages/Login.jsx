@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import './Login.css'
 import { BsTwitter } from 'react-icons/bs'
-
+import { useNavigate } from 'react-router-dom'
 const Login = () => {
+    const navigate = useNavigate();
     const [apikey, setApiKey] = useState('');
     const submitApiKey = () => {
-        console.log(apikey);
+        navigate(`/home/:${apikey}`);
     }
     return (
         <>

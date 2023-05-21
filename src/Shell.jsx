@@ -11,6 +11,7 @@ const Shell = () => {
             <BrowserRouter>
                 <Routes>
                     <Route index element={<Login />} />
+                    <Route path='/home/:apikey' element={<Home />} />
                     <Route path='/home' element={<Home />} />
                     <Route path='/about' element={<About />} />
                     <Route path='/tweet/:id' element={<SingleTweet />} />
