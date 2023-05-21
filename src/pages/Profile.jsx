@@ -21,7 +21,6 @@ const Profile = () => {
     useEffect(() => {
         fetchTweets();
     }, [shouldRefresh]);
-
     return (
         <>
             <div className='container'>
