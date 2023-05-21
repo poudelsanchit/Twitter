@@ -1,13 +1,50 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Login.css'
 import { BsTwitter } from 'react-icons/bs'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
+
 const Login = () => {
     const navigate = useNavigate();
+    const [apikeys, setApiKeys] = useState([]);
     const [apikey, setApiKey] = useState('');
+
+    const [shouldRefresh, setShouldRefresh] = useState(false);
+    //navigation to homepage
     const submitApiKey = () => {
-        navigate(`/home/:${apikey}`);
+        if (counter > 0) {
+            navigate(`/home/:${apikey}`);
+        }
     }
+    //for fetching apikey
+    const [users, setUser] = useState([]);
+    const fetchTweets = async () => {
+        const posts = await axios.get('https://react-workshop-todo.fly.dev/posts/all?limit=10', {
+            headers: {
+                apiKey: '6457383b7213f63d43544ac0'
+            }
+        });
+        setUser(posts.data);
+    };
+    //useeffect
+    useEffect(() => {
+        fetchTweets();
+    }, [shouldRefresh]);
+    //pushing all of the apikeys to an array
+    users.map(({ user }) => {
+        apikeys.push(user._id);
+    });
+    //
+    var counter = 0;
+    for (var i = 0; i < apikeys.length - 1; i++) {
+        if (apikey == apikeys[i]) {
+            counter++;
+        }
+    }
+    console.log(counter)
+
+
+
     return (
         <>
             <div className="login-page">
