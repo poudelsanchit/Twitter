@@ -4,12 +4,13 @@ import Home from './pages/Home';
 import About from './pages/About'
 import SingleTweet from './SingleTweet';
 import Profile from './pages/Profile';
+import Login from './pages/Login';
 const Shell = () => {
     return (
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route index element={<Home />} />
+                    <Route index element={<Login />} />
                     <Route path='/home' element={<Home />} />
                     <Route path='/about' element={<About />} />
                     <Route path='/tweet/:id' element={<SingleTweet />} />

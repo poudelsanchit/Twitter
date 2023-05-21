@@ -1,0 +1,181 @@
+.login-page {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: #000000;
+
+    /* outline-color: red;
+    outline-style: dotted; */
+    width: 600px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+}
+
+
+.logo {
+
+    flex: 1;
+    font-size: 38px;
+}
+
+.signin-text {
+    font-weight: 900;
+    font-size: 25px;
+    width: 65%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.google {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.apple {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.apple-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+AiFillApple {
+    background: black;
+}
+
+.or {
+    width: 65%;
+    flex: 0.5;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.leftline {
+    height: 1px;
+    width: 100%;
+    background-color: #333639;
+}
+
+.rightline {
+    height: 1px;
+    width: 100%;
+    background-color: #333639;
+}
+
+.apiKey {
+    width: 100%;
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loginButton {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.forget {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.signUp {
+    width: 100%;
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button {
+    border: 1px solid #ccc;
+    width: 65%;
+    border-radius: 20px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+a {
+    text-decoration: none;
+    color: #1d9bf0
+}
+
+input {
+    width: 65%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #333639;
+    padding: 0 10px;
+
+}
+
+input:focus {
+    outline: none;
+    background-color: #000000;
+    color: white;
+    border: 1px solid #333639;
+}
