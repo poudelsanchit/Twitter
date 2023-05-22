@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react'
 import UserTweets from './UserTweets'
 import axios from 'axios';
 import TweetBox from './TweetBox';
-const Tweets = () => {
+const Tweets = ({ newapikey }) => {
     const [users, setUser] = useState([]);
     const [shouldRefresh, setShouldRefresh] = useState(false);
     const fetchTweets = async () => {
         const posts = await axios.get("https://react-workshop-todo.fly.dev/posts/all?limit=100", {
             headers: {
-                apikey: '6457383b7213f63d43544ac0'
+                apikey: `${newapikey}`
             }
         });
         setUser(posts.data);
@@ -73,10 +73,10 @@ const Tweets = () => {
             <div className="tweets">
                 {/* tweetbox */}
 
-                <TweetBox setShouldRefresh={setShouldRefresh} />
+                <TweetBox setShouldRefresh={setShouldRefresh} tweetpostapikey={newapikey} />
                 {
                     users.map(({ user, content, image, _id, }) => {
-                        return <UserTweets image={image} username={user.name} profilepic={'https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4'} tweettext={content} commentcounts={8} likecountcounts={7} retweetcounts={7} viewscounts={9} key={_id} id={_id} apikey={user._id} />
+                        return <UserTweets image={image} username={user.name} profilepic={'https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4'} tweettext={content} commentcounts={8} likecountcounts={7} retweetcounts={7} viewscounts={9} key={_id} id={_id} apikey={user._id} newapikey={newapikey}/>
                     }
                     )
                 }

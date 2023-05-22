@@ -6,15 +6,14 @@ import TweetHeader from './TweetHeader';
 import ProfileImage from './ProfileImage';
 import { FiMoreHorizontal, FiTrash, FiShare } from "react-icons/fi";
 import axios from 'axios';
-const UserTweets = ({ username, image, tweettext, profilepic, commentcounts, likecountcounts, retweetcounts, viewscounts, id, apikey }) => {
+const UserTweets = ({ username, image, tweettext, profilepic, commentcounts, likecountcounts, retweetcounts, viewscounts, id, apikey, newapikey }) => {
     const [openDropdown, setOpenDropdown] = useState(false);
     //delete post
     const handleDeletePost = async () => {
-        console.log(id);
         try {
             await axios.delete(`https://react-workshop-todo.fly.dev/posts/${id}`, {
                 headers: {
-                    apiKey: '6457383b7213f63d43544ac0'
+                    apiKey: `${newapikey}`
                 }
             });
             alert('Post deleted sucessfully.')

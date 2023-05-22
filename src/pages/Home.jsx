@@ -6,12 +6,11 @@ import { useParams } from 'react-router-dom'
 const Home = () => {
   const { apikey } = useParams();
   let newapikey = apikey.substr(1, apikey.length - 1);
-  console.log(newapikey);
   return (
     <>
       <div className='container'>
         <Menu />
-        <Tweeets />
+        <Tweeets newapikey={newapikey} />
         <Trends />
       </div >
     </>

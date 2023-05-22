@@ -2,16 +2,16 @@ import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
 
-const InputTweet = ({ setShouldRefresh }) => {
+const InputTweet = ({ setShouldRefresh, tweetpostapikey }) => {
     const [tweetContent, setTweetContent] = useState('');
     const upload = async () => {
         try {
             axios.post(`https://react-workshop-todo.fly.dev/posts/`, {
                 content: tweetContent,
-                image: 'https://sanchitpoudel.com.np/assets/image4.jpg',
+                image: 'https://www.cristianoronaldo.com/assets/images/brand_underwear.jpg?812974',
             }, {
                 headers: {
-                    apiKey: '6457383b7213f63d43544ac0'
+                    apiKey: `${tweetpostapikey}`
                 },
             });
             setTweetContent("");
