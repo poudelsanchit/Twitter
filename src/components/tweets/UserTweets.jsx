@@ -33,7 +33,7 @@ const UserTweets = ({ username, image, tweettext, profilepic, commentcounts, lik
                     <div className="mainheader">
                         <TweetHeader tweettext={tweettext} username={username} id={id} apikey={apikey} />
                         <TweetImage image={image} id={id} />
-                        <Footer commentcounts={commentcounts} likecountcounts={likecountcounts} retweetcounts={retweetcounts} viewscounts={viewscounts} id={id} />
+                        <Footer commentcounts={commentcounts} likecountcounts={likecountcounts} retweetcounts={retweetcounts} viewscounts={viewscounts} id={id} newapikey={newapikey}/>
                     </div>
                 </div>
                 <div className="space-right">

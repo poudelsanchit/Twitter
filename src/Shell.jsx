@@ -14,7 +14,7 @@ const Shell = () => {
                     <Route path='/home/:apikey' element={<Home />} />
                     <Route path='/home' element={<Home />} />
                     <Route path='/about' element={<About />} />
-                    <Route path='/tweet/:id' element={<SingleTweet />} />
+                    <Route path='/tweet/:id/:newapikey' element={<SingleTweet />} />
                     <Route path='/profile/:id' element={<Profile />} />
 
                 </Routes>

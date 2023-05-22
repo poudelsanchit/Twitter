@@ -4,10 +4,10 @@ import { FaRegComment } from "react-icons/fa";
 import { FiShare } from "react-icons/fi";
 import { AiOutlineRetweet, AiOutlineHeart } from "react-icons/ai";
 import { FiBarChart2 } from "react-icons/fi";
-const Footer = ({ commentcounts, likecountcounts, retweetcounts, viewscounts, id }) => {
+const Footer = ({ commentcounts, likecountcounts, retweetcounts, viewscounts, id, newapikey }) => {
     const navigate = useNavigate();
     const navigateToTweet = () => {
-        navigate(`/tweet/${id}`);
+        navigate(`/tweet/${id}/${newapikey}`);
 
     }
 

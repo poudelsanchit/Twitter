@@ -13,12 +13,14 @@ import UserComments from './components/UserComments';
 
 const SingleTweet = () => {
 
+    const { newapikey } = useParams();
+
     const { id } = useParams();
     const [tweet, setTweet] = useState(null);
     const fetchTweet = async () => {
         const resp = await axios.get('https://react-workshop-todo.fly.dev/posts/' + id, {
             headers: {
-                apikey: '6457383b7213f63d43544ac0'
+                apikey: `${newapikey}`
             }
         });
         setTweet(resp.data.post)
