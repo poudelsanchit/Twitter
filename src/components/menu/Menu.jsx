@@ -9,7 +9,7 @@ const Menu = ({ fullname, profileimage, username, apikey }) => {
 
     const navigate = useNavigate();
     const navigateToHome = () => {
-        navigate(`/home`);
+        navigate(`/home/:${apikey}`);
     }
     const navigateToProfile = () => {
         navigate(`/profile/:${apikey}`);
