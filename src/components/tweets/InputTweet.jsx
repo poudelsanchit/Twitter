@@ -30,7 +30,7 @@ const InputTweet = ({ setShouldRefresh, tweetpostapikey }) => {
     return (
         <>
             <div className="tweetboxform">
-                <input type="text" id="tweetinput" placeholder="What is happening?!" required value={tweetContent} onChange={(e) => setTweetContent(e.target.value)} />
+                <input autoComplete='off' type="text" id="tweetinput" placeholder="What is happening?!" required value={tweetContent} onChange={(e) => setTweetContent(e.target.value)} />
                 <div className="tweetbutton">
                     <button className="button" onClick={handleSubmit}>Tweet</button>
 
