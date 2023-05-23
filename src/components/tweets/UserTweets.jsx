@@ -6,7 +6,12 @@ import TweetHeader from './TweetHeader';
 import ProfileImage from './ProfileImage';
 import { FiMoreHorizontal, FiTrash, FiShare } from "react-icons/fi";
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 const UserTweets = ({ username, image, tweettext, profilepic, commentcounts, likecountcounts, retweetcounts, viewscounts, id, apikey, newapikey }) => {
+    const navigate = useNavigate();
+    const navigateToProfile = () => {
+        navigate(`/profile/:${apikey}`);
+    }
     const [openDropdown, setOpenDropdown] = useState(false);
     //delete post
     const handleDeletePost = async () => {
@@ -23,17 +28,19 @@ const UserTweets = ({ username, image, tweettext, profilepic, commentcounts, lik
         }
     }
 
+
     return (
         <>
             <div className="card ">
                 <div className="space-left">
                 </div>
                 <div className='content'>
-                    <ProfileImage profilepic={profilepic} />
+                    <a onClick={navigateToProfile}>  <ProfileImage profilepic={profilepic} /></a>
+
                     <div className="mainheader">
                         <TweetHeader tweettext={tweettext} username={username} id={id} apikey={apikey} />
-                        <TweetImage image={image} id={id} />
-                        <Footer commentcounts={commentcounts} likecountcounts={likecountcounts} retweetcounts={retweetcounts} viewscounts={viewscounts} id={id} newapikey={newapikey}/>
+                        <TweetImage image={image} id={id} newapikey={newapikey} />
+                        <Footer commentcounts={commentcounts} likecountcounts={likecountcounts} retweetcounts={retweetcounts} viewscounts={viewscounts} id={id} newapikey={newapikey} />
                     </div>
                 </div>
                 <div className="space-right">

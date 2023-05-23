@@ -1,6 +1,6 @@
 import InputTweet from './InputTweet';
 import './tweetbox.css'
-const TweetBox = ({ setShouldRefresh, tweetpostapikey }) => {
+const TweetBox = ({ setShouldRefresh, tweetpostapikey, profileimage }) => {
 
     return (
         <div className='tweetbox'>
@@ -13,7 +13,7 @@ const TweetBox = ({ setShouldRefresh, tweetpostapikey }) => {
             </div>
             <div className="tweetboxmain">
                 <div className="tweetboximage">
-                    <img src='https://pbs.twimg.com/profile_images/1526927042033250304/TJqo3n55_400x400.jpg' className='profile-image' />
+                    <img src={profileimage[0]} className='profile-image' />
 
                 </div>
                 <InputTweet setShouldRefresh={setShouldRefresh} tweetpostapikey={tweetpostapikey} />

@@ -24,7 +24,6 @@ const UserComments = ({ id }) => {
 
     return (
         <>
-
             {comments.map((data) => (
                 <>
                     <div className="individualcomments">

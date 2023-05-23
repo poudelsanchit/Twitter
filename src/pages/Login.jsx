@@ -9,7 +9,6 @@ const Login = () => {
     const [apikeys, setApiKeys] = useState([]);
     const [apikey, setApiKey] = useState('');
 
-    const [shouldRefresh, setShouldRefresh] = useState(false);
     //navigation to homepage
     const submitApiKey = () => {
         if (counter > 0) {
@@ -20,6 +19,7 @@ const Login = () => {
         }
     }
     //for fetching apikey
+    const [shouldRefresh, setShouldRefresh] = useState(false);
     const [users, setUser] = useState([]);
     const fetchTweets = async () => {
         const posts = await axios.get('https://react-workshop-todo.fly.dev/posts/all?limit=10', {

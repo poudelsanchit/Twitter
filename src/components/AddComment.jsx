@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import ProfileImage from './tweets/ProfileImage'
+import { useParams } from 'react-router-dom';
 const AddComment = ({ tweet, id }) => {
+    const { newapikey } = useParams();
+    const apikey = newapikey;
+    console.log(apikey)
     //upload functions
     const [comment, setCommentContent] = useState('');
     const handleCommentSubmit = () => {
@@ -17,20 +21,20 @@ const AddComment = ({ tweet, id }) => {
                 },
                 {
                     headers: {
-                        apiKey: '6457383b7213f63d43544ac0',
+                        apiKey: `${apikey}`,
                     },
                 }
             );
             setCommentContent("");
+            alert('Commented sucessfully');
         } catch (error) {
             console.log(error);
             alert('Error Found');
         }
     };
-
-
     return (
         <>
+
             <div className="replytweetsmain">
                 <div className="replytweets">
                     <div className="replytweetimage">

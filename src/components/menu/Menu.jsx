@@ -3,11 +3,16 @@ import { AiOutlineMessage } from "react-icons/ai";
 import { CiHashtag, CiBookmark, CiTwitter, CiHome, CiBellOn, CiViewList, CiUser, CiCircleMore } from "react-icons/ci";
 import ProfileImage from '../tweets/ProfileImage';
 import { useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
-const Menu = () => {
+const Menu = ({ fullname, profileimage, username, apikey }) => {
+
     const navigate = useNavigate();
     const navigateToHome = () => {
         navigate(`/home`);
+    }
+    const navigateToProfile = () => {
+        navigate(`/profile/:${apikey}`);
     }
     return (
         <>
@@ -36,7 +41,7 @@ const Menu = () => {
                     <div className="items">
                         <CiBookmark className='icon' /><p className='text'>Bookmarks</p>
                     </div>
-                    <div className="items">
+                    <div className="items" onClick={navigateToProfile}>
                         <CiUser className='icon' /><p className='text'>Profile</p>
                     </div>
                     <div className="items">
@@ -45,11 +50,11 @@ const Menu = () => {
 
                     <div className="items">
                         <p className="icon profileicon">
-                            <ProfileImage profilepic={'https://pbs.twimg.com/profile_images/1526927042033250304/TJqo3n55_400x400.jpg'} />
+                            <ProfileImage profilepic={profileimage} />
                         </p>
                         <div className='text profiletext'>
-                            <p className='profilename'>Sanchit Poudel</p>
-                            <p className='profileusername'>@PoudelSanchit</p>
+                            <p className='profilename'>{fullname}</p>
+                            <p className='profileusername'>@{username}</p>
                         </div>
                     </div>
                 </div>
