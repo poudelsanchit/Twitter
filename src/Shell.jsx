@@ -7,7 +7,7 @@ import Profile from './pages/Profile';
 import Login from './pages/Login';
 const Shell = () => {
     return (
-        <> 
+        <>
             <BrowserRouter>
                 <Routes>
                     <Route index element={<Login />} />
