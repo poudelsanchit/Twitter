@@ -18,7 +18,7 @@ const Home = () => {
   const fetchTweets = async () => {
     const posts = await axios.get('https://react-workshop-todo.fly.dev/posts/all?limit=10', {
       headers: {
-        apiKey: `${newapikey}`
+        apiKey: `645bdf48b4900dc4571ac6aa`
       }
     });
     setUser(posts.data);
