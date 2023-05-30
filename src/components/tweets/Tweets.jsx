@@ -16,7 +16,7 @@ const Tweets = ({ newapikey, profileimage }) => {
     useEffect(() => {
         fetchTweets();
     }, [shouldRefresh]);
-    // let users = [
+    // let users1 = [
     //     {
     //         username: 'Real Madrid',
     //         image: 'https://cf.shopee.com.my/file/149ead55ea80fdeca6684db87965ba7e?fbclid=IwAR2LGDAt3HiuniVFjkwmbITL2WaaGr-EGenbOMQMIhB8pkBQD2L0I_N9uPQ',

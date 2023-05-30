@@ -89,7 +89,7 @@
 }
 
 .tweets {
-  background-color: #000000;
+  background-color: #111111;
   flex: 2;
   float: left;
   overflow-y: scroll;
@@ -100,7 +100,7 @@
 
 .trends {
   flex: 1.1;
-  background-color: #000000;
+  background-color: #111111;
   overflow-y: scroll;
 
 }
