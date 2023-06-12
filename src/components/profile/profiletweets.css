@@ -17,3 +17,37 @@
 
 
 }
+
+/* profile header section */
+.profile-header {
+
+    background-color: #000000;
+    border-bottom: 0.25px solid #2f3336;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+.backbutton {
+    padding: 1rem;
+    height: max-content;
+}
+
+.profile-header-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1rem 0;
+
+}
+
+.profile-header-image {
+    position: relative;
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+
+}

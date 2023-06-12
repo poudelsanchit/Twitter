@@ -4,6 +4,8 @@ import Menu from '../components/menu/Menu';
 import Trends from '../components/trends/Trends';
 import ProfileTweets from '../components/profile/ProfileTweets';
 import { useParams } from 'react-router-dom';
+import TweetHeader from '../components/tweets/TweetHeader';
+import ProfileHeader from '../components/profile/ProfileHeader';
 const Profile = () => {
     const [fullname, setFullName] = useState([]);
     const [profileimage, setProfileImage] = useState([]);
@@ -37,8 +39,11 @@ const Profile = () => {
             <div className='container'>
                 <Menu apikey={id.substr(1, id.length - 1)} fullname={fullname[0]} profileimage={profileimage[0]} username={username[0]} />
                 <div className="individualPost">
+                    <ProfileHeader image={profileimage[0]} name={fullname[0]} username={username[0]} />
+
                     {users.map((data) => {
-                        return <ProfileTweets tweet={data.content} image={data.image} profilepic={'https://avatars.githubusercontent.com/u/' + data.user.githubId + '?v=4'} username={data.user.fullname} id={data._id} key={data.id} />
+                        return <>
+                            <ProfileTweets tweet={data.content} image={data.image} profilepic={'https://avatars.githubusercontent.com/u/' + data.user.githubId + '?v=4'} username={data.user.fullname} id={data._id} key={data.id} /></>
                     })}
 
                 </div>

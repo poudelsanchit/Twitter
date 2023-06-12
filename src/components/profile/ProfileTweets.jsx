@@ -4,6 +4,7 @@ import ProfileImage from '../tweets/ProfileImage'
 import TweetHeader from '../tweets/TweetHeader'
 import Footer from '../tweets/Footer'
 import TweetImage from '../tweets/Image'
+import ProfileHeader from './ProfileHeader'
 const ProfileTweets = ({ tweet, image, profilepic, username, id }) => {
 
     return (

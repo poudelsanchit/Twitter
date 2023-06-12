@@ -3,7 +3,8 @@ import { AiOutlineMessage } from "react-icons/ai";
 import { CiHashtag, CiBookmark, CiTwitter, CiHome, CiBellOn, CiViewList, CiUser, CiCircleMore } from "react-icons/ci";
 import ProfileImage from '../tweets/ProfileImage';
 import { useNavigate } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import TwitterIcon from '../TwitterIcon';
+
 
 const Menu = ({ fullname, profileimage, username, apikey }) => {
 
@@ -19,8 +20,9 @@ const Menu = ({ fullname, profileimage, username, apikey }) => {
             <div className="menu">
                 <div className="menu1"></div>
                 <div className="menu2">
-                    <div className="items" onClick={navigateToHome}>
-                        <CiTwitter className='icon' /><p className='text'> </p>
+                    <div className="items appicon" onClick={navigateToHome} style={{ color: 'red' }}>
+                        <TwitterIcon />
+                        <p className='text'> </p>
                     </div>
                     <div className="items">
                         <CiHome className='icon' /><p className='text'>Home</p>

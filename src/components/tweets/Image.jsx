@@ -9,7 +9,7 @@ const TweetImage = ({ image, id, newapikey }) => {
     return (
         <>
             <div className="image" >
-                <img src={image} alt="Jersy" className='img tweetmainiamge' onClick={navigateToTweet} />
+                <img src={image} className='img tweetmainiamge' onClick={navigateToTweet} />
             </div>
         </>
     )
