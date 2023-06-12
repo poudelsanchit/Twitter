@@ -179,3 +179,15 @@ input:focus {
     color: white;
     border: 1px solid #333639;
 }
+
+
+@media screen and (max-width:426px) {
+    .login-container {
+        width: 100%;
+    }
+
+    .signin-text {
+        width: 100%;
+        align-items: center;
+    }
+}
