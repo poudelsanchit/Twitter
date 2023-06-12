@@ -92,7 +92,7 @@ const Login = () => {
 
                         </div>
                         <div className="signUp">
-                            <p>Don’t have an account? <a href="">Sign up</a> </p>
+                            <p>Don’t have an account? <a href="https://react-workshop-todo.fly.dev/auth/github" target='_blank'>Sign up</a> </p>
                         </div>
                     </div>
 
